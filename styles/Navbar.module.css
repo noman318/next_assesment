@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #527c7c;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar img {
+  width: 50px;
+  height: 50px;
+}
+.nav_links {
+  flex: 1;
+  text-align: right;
+}
+.nav_links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav_links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav_links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #68b4b4;
+  display: block;
+  margin: auto;
+}
+.nav_links ul li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+/*<------------------------------------------- Footer css -----------------------------------> */
+.foot {
+  background-color: #415858;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer_items {
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.footer_items > li {
+  list-style: none;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+.footer_items > li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #68b4b4;
+  display: block;
+  margin: auto;
+}
+.footer_items > li:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+.foot_data {
+  color: gray;
+  font-size: 18px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
