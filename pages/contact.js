@@ -21,7 +21,7 @@ function Contact() {
           </div>
           <div className={styles.cards}>
             <form className={styles.form}>
-              <label className={styles.label} for="fname">
+              <label className={styles.label} htmlFor="fname">
                 First Name
               </label>
               <input
@@ -32,7 +32,7 @@ function Contact() {
                 required
                 placeholder="First Name"
               />
-              <label className={styles.label} for="lname">
+              <label className={styles.label} htmlFor="lname">
                 Last Name
               </label>
               <input
@@ -43,7 +43,7 @@ function Contact() {
                 required
                 placeholder="Last Name"
               />
-              <label className={styles.label} for="email">
+              <label className={styles.label} htmlFor="email">
                 Email Id
               </label>
               <input
@@ -55,7 +55,7 @@ function Contact() {
                 placeholder="Mail Id"
                 // mailto:value="shaikhmohdnoman612@gmail.com"
               />
-              <label className={styles.label} for="email">
+              <label className={styles.label} htmlFor="email">
                 Message
               </label>
               <input

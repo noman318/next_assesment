@@ -4,7 +4,9 @@
   margin: auto;
 }
 .gallery > h2 {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
 }
 .gallery_section {
   /* max-width: 1200px;
@@ -32,7 +34,7 @@
 .feature_data {
   width: 90%;
   margin: auto;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
