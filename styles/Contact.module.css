@@ -1,25 +1,37 @@
-.contact_section {
-  /* max-width: 1200px;
-      width: 90%;
-      margin: auto; */
-  background-image: url("/contact-bg.jpg");
-  height: 90vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  width: 100%;
+  height: 92dvh;
 }
-.contact_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-.contact_content > h1 {
-  color: whitesmoke;
+
+.Image__root {
+  z-index: -1;
+}
+
+.content > h1 {
+  color: #3cbebe;
   margin-top: 40px;
   font-size: 50px;
+}
+.content::after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #4aa0a0;
+  display: block;
+  margin: auto;
+}
+.content:hover::after {
+  width: 100%;
+  transition: 0.5s;
 }
 .contact_main_section {
   display: flex;

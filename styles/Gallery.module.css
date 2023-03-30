@@ -8,28 +8,40 @@
   margin-bottom: 2%;
   text-align: center;
 }
-.gallery_section {
-  /* max-width: 1200px;
-      width: 90%;
-      margin: auto; */
-  background-image: url("/gallery.jpg");
-  height: 80vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  width: 100%;
+  height: 92dvh;
 }
-.gallery_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-.gallery_content > h1 {
+
+.Image__root {
+  z-index: -1;
+}
+
+.content > h1 {
   color: whitesmoke;
   margin-top: 40px;
   font-size: 50px;
+}
+.content::after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: wheat;
+  display: block;
+  margin: auto;
+}
+.content:hover::after {
+  width: 100%;
+  transition: 0.5s;
 }
 .feature_data {
   width: 90%;

@@ -3,20 +3,27 @@ import styles from "../styles/About.module.css";
 import aboutDummy from "../data/aboutData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 function About() {
   // console.log("aboutDummy", aboutDummy);
   return (
     <div>
       {/* <Header /> */}
-      <div className={styles.about_section}>
+      {/* <div className={styles.about_section}>
         <div className={styles.about_content}>
           <h1>About Us</h1>
         </div>
+      </div> */}
+                  <div className={styles.container}>
+      <div className={styles.content}>
+        <h1>Contact Us</h1>
       </div>
+      <Image src="/about.jpg" alt="My Image" layout="fill" objectFit="cover" />
+    </div>
       <div className={styles.main_content}>
         <div className={styles.about_image}>
-          <img src="/work.jpg" loading="'lazy" alt="about_image" />
+          <Image src="/work.png" width={800} height={800} loading="lazy" alt="about_image" />
         </div>
         <div className={styles.about_image_data}>
           <h2>
@@ -40,7 +47,7 @@ function About() {
         <div className={styles.feature_data}>
           {aboutDummy?.map((about, id) => (
             <div className={styles.feature_cards} key={id}>
-              <img src={about.img} loading="'lazy" alt="architecture" />
+              <Image src={about.img} width={50} height={50} loading="lazy" alt="architecture" />
               <h3>{about.title}</h3>
               <p>{about.para}</p>
             </div>

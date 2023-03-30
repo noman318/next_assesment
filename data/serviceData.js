@@ -32,7 +32,7 @@ const serviceData = [
   {
     id: 6,
     title: "Great Maintenance",
-    img: "/services6.jpg",
+    img: "/service12.jpg",
     para: "There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration.",
   },
 ];

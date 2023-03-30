@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Hero.module.css";
+import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -14,6 +15,7 @@ function HeroSection() {
           </p>
         </div>
       </div>
+      <Image src="/mainBuilding.jpg" alt="My Image" layout="fill" objectFit="cover" />
     </div>
   );
 }
