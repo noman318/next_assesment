@@ -102,3 +102,21 @@
   transition: 0.3s;
   border: 1px solid #527c7c;
 }
+@media screen and (max-width: 600px) {
+  .container {
+    height: 70dvh;
+  }
+  .content > h1 {
+    text-align: center;
+  }
+
+  .feature_data {
+    margin-top: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .feature_cards {
+    width: 90%;
+    margin-left: 10%;
+  }
+}

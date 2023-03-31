@@ -2,9 +2,9 @@
   /* max-width: 1200px;
     width: 90%;
     margin: auto; */
-    position: relative;
-    width: 100%;
-    height: 93dvh;
+  position: relative;
+  width: 100%;
+  height: 93dvh;
 }
 .hero_content {
   position: absolute;
@@ -55,4 +55,24 @@
 .hero_content_data:hover::after {
   width: 100%;
   transition: 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .hero_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .hero_content h4 {
+    text-align: center;
+  }
+  .hero_content h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+  }
+  .hero_content_data {
+    display: none;
+  }
 }
