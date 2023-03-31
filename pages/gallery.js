@@ -10,29 +10,36 @@ function Gallery() {
   return (
     <div>
       {/* <Header /> */}
-      {/* <div class={styles.gallery_section}>
-        <div class={styles.gallery_content}>
-          <h1>Gallery</h1>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <h1>Our Gallery</h1>
         </div>
-      </div> */}
-              <div className={styles.container}>
-      <div className={styles.content}>
-        <h1>Our Gallery</h1>
+        <Image
+          src="/gallery.jpg"
+          height={600}
+          width={1352}
+          alt="My Image"
+          loading="lazy"
+        />
       </div>
-      <Image src="/gallery.jpg" alt="My Image" layout="fill" objectFit="cover" />
-    </div>
-      <div class={styles.gallery}>
+      <div className={styles.gallery}>
         <h2>Images</h2>
-        <div class={styles.feature_data}>
+        <div className={styles.feature_data}>
           {galleryData?.map((gallery, id) => (
-            <div class={styles.feature_cards} key={id}>
-              <Image src={gallery.img} width={800} height={800} loading="lazy" alt="architecture" />
+            <div className={styles.feature_cards} key={id}>
+              <Image
+                src={gallery.img}
+                width={800}
+                height={800}
+                loading="lazy"
+                alt="architecture"
+              />
               <p>{gallery.title}</p>
             </div>
           ))}
         </div>
       </div>
-      <div class={styles.button_to_top}>
+      <div className={styles.button_to_top}>
         <a href="#">Top</a>
       </div>
       {/* <Footer /> */}

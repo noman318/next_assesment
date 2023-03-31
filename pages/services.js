@@ -12,15 +12,26 @@ function Services() {
       {/* <Header /> */}
       <div>
         <div className={styles.container}>
-      <div className={styles.content}>
-        <h1>Our Services</h1>
-      </div>
-      <Image src="/work12.jpg" alt="My Image" layout="fill" objectFit="cover" />
-    </div>
+          <div className={styles.content}>
+            <h1>Our Services</h1>
+          </div>
+          <Image
+            src="/work12.jpg"
+            height={600}
+            width={1352}
+            alt="My Image"
+            loading="lazy"
+          />
+        </div>
         <div className={styles.feature_data}>
           {serviceData?.map((service, id) => (
             <div className={styles.feature_cards} key={id}>
-              <Image src={service.img} width={800} height={800} alt="architecture" />
+              <Image
+                src={service.img}
+                width={800}
+                height={800}
+                alt="architecture"
+              />
               <h3>{service.title}</h3>
               <p>{service.para}</p>
             </div>

@@ -15,7 +15,13 @@ function HeroSection() {
           </p>
         </div>
       </div>
-      <Image src="/mainBuilding.jpg" alt="My Image" layout="fill" objectFit="cover" />
+      <Image
+        src="/mainBuilding.jpg"
+        height={600}
+        width={1352}
+        alt="My Image"
+        loading="lazy"
+      />
     </div>
   );
 }

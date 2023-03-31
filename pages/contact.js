@@ -9,16 +9,28 @@ function Contact() {
     <>
       {/* <Header /> */}
       <div>
-            <div className={styles.container}>
-      <div className={styles.content}>
-        <h1>Contact Us</h1>
-      </div>
-      <Image src="/contact-bg.jpg" alt="My Image" layout="fill" objectFit="cover" />
-    </div>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h1>Contact Us</h1>
+          </div>
+          <Image
+            src="/contact-bg.jpg"
+            width={1352}
+            height={600}
+            alt="My Image"
+            priority
+          />
+        </div>
         <div className={styles.contact_main_section}>
           <div className={styles.card}>
             <div className={styles.cards}>
-              <Image width={700} height={700} src="/contact.jpg" loading="lazy" alt="contact_us" />
+              <Image
+                width={700}
+                height={700}
+                src="/contact.jpg"
+                loading="lazy"
+                alt="contact_us"
+              />
             </div>
           </div>
           <div className={styles.cards}>
